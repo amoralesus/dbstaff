@@ -1,4 +1,4 @@
 dbstaff
 =======
 
-sample db staff app
+Sample rails app simulating staff in a company.
