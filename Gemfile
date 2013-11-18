@@ -46,14 +46,21 @@ gem 'capistrano', group: :development
 # Use debugger
 gem 'debugger', group: [:development, :test]
 
+group :development do
+  gem 'guard-rspec', :require => false
+  gem 'guard-cucumber', :require => false
+end
+
 group :test do
   gem 'rspec-rails'
 
   gem 'cucumber-rails', :require => false
 
+  gem "shoulda-matchers"
   gem 'database_cleaner'
 end
 
+
+
 gem 'haml-rails'
 
-gem 'guard-rails'
