@@ -12,12 +12,14 @@
  *= require_tree .
  */
 
-$navbar-default-bg: #43637C;
-$navbar-default-link-color: white;
-$navbar-default-link-hover-color: yellow;
+$navbar-default-bg: #fff;
+$navbar-default-link-color: #444;
+$navbar-default-link-hover-color: #5283A7;
 
 @import "bootstrap";
 
 .pull_down {
-  padding-top: 60px;
+  padding-top: 30px;
 }
+
+

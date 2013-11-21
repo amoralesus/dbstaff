@@ -4,11 +4,13 @@
     %title DB Staff
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
     = stylesheet_link_tag "application", :medial => "all", 'data-turbolinks-track' => true
+    = stylesheet_link_tag "fonts/colaborate/stylesheet", :medial => "all", 'data-turbolinks-track' => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
 
     %body
-      %div{:class => "navbar navbar-default navbar-fixed-top"}
+    .container
+      %div{:class => "navbar navbar-default", :role => "navigation"}
         %div{:class => "container"}
           %div{:class => "navbar-header"}
             %button{:type => "button", :class => "navbar-toggle collapsed", "data-toggle" => "collapse", "data-target" => ".navbar-collapse"}

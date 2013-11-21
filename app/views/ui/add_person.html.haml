@@ -1,17 +1,27 @@
 %section.container
   .row
-    .col-md-10.col-md-offset-1
+    .col-md-4.col-md-offset-4.col-sm-6.col-sm-offset-3.col-xs-10.col-xs-offset-1
       %form
         %header
+          
           %h1 Add Person
-        %div{:class => "form-group"}
-          %label First Name
-          %input{:type => "text", :class => "form-control"}
-        %div{:class => "form-group"}
-          %label Last Name
-          %input{:type => "text", :class => "form-control"}
-        %div{:class => "form-group"}
-          %label Email
-          %input{:type => "text", :class => "form-control"}
+          
+        .form-group
+
+          %input{:type => "text", :class => "form-control input-padding", :placeholder =>"first name"}
+          %input{:type => "text", :class => "form-control input-padding" , :placeholder =>"last name"}
+        .form-group
+          %label contact information  
+          %input{:type => "text", :class => "form-control input-padding" , :placeholder =>"email"}
+          %input{:type => "text", :class => "form-control input-padding" , :placeholder =>"mobile phone"}
+          %input{:type => "text", :class => "form-control input-padding" , :placeholder =>"home phone"}
+          
+        .form-group
+          %label address 
+          %input{:type => "text", :class => "form-control input-padding" , :placeholder =>"street"}
+          %input{:type => "text", :class => "form-control input-padding" , :placeholder =>"city"}
+          %input{:type => "text", :class => "form-control input-padding" , :placeholder =>"state"}         
+          %input{:type => "text", :class => "form-control input-padding" , :placeholder =>"zip code"} 
+          
         %button{:type => "submit", :class => "btn btn-default"}
           Submit
